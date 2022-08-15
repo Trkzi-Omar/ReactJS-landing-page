@@ -1,0 +1,312 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/PoppinsRegular-B2Bw.otf');
+}
+
+@font-face {
+    font-family: 'Gallient';
+    src: url('./assets/fonts/Gallient.ttf');
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr-dark: #121212;
+    --clr-white: #fff;
+    --clr-gradient: linear-gradient(100.25deg, #FF3030 16.12%, #7682B3 65.23%, #C662AA 163.44%, #27B1FF 212.54%);;
+    --clr-gradient-1: #FF3030;
+    --clr-gradient-2: #7682B3FF;
+    --fw-normal: 400;
+    --fw-bold: 600;
+    --fw-black: 900;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+html, body, #app, #app > div {
+    height: 100%;
+}
+
+#App {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.25;
+    color: var(--clr-white);
+    background-color: var(--clr-dark);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/** BackGround **/
+#background {
+    position: relative;
+    margin: 0 !important;
+    padding: 0 !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-img {
+    margin: 0;
+    padding: 0;
+    overflow: hidden !important;
+    white-space: nowrap;
+}
+
+#img-center-person {
+    z-index: 1;
+    width: 42.7%;
+    position: absolute;
+    left: calc(50% - 42.7% / 2);
+    bottom: 0;
+}
+
+#img-left-eclipse {
+    position: absolute;
+    width: 1179px;
+    height: 1179px;
+    left: -16%;
+    top: 3%;
+    overflow: hidden !important;
+    z-index: 0;
+
+    /* Gradient */
+    background: linear-gradient(100.25deg, #FF3030 16.12%, #7682B3 65.23%, #C662AA 163.44%, #27B1FF 212.54%);
+    opacity: 0.47;
+    filter: blur(444px);
+}
+
+/**   Navbar   **/
+nav {
+    background: transparent;
+    width: 100% !important;
+    padding-bottom: 0 !important;
+}
+
+#logo-text {
+    font-family: 'Gallient', serif;
+    font-size: 44px;
+    line-height: 58.4px;
+    color: #FFFFFF;
+}
+
+.nav-list {
+    margin-left: 20%;
+    display: flex;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    font-weight: var(--fw-normal);
+    justify-content: space-between;
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link {
+    font-weight: var(--fw-normal);
+    color: #fff !important;
+    letter-spacing: 0.8px;
+    padding: 0 25px;
+    font-size: 19.9px;
+    opacity: 0.75;
+}
+
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+    font-weight: var(--fw-bold);
+    opacity: 1;
+}
+
+.navbar-text {
+    padding-left: 17.8%;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.9px;
+    line-height: 29.8px;
+
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.navbar-text span {
+    color: var(--clr-white);
+}
+
+.navbar-text img {
+    padding-left: 0.4rem;
+}
+
+.navbar-text:hover img {
+    padding-left: 1rem;
+    transition: ease-in-out;
+    transition-duration: 500ms;
+}
+
+/** Horizontal line **/
+#imgHorizontalLine {
+    width: 100%;
+}
+
+/** Home **/
+
+#home {
+    display: block;
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+}
+
+.home-text-upper {
+    width: 100% !important;
+    display: inline-block;
+}
+
+.home-text-upper-left {
+    margin: 0 !important;
+    padding: 8.5% 15% 0 6% !important;
+    width: 50% !important;
+
+    float: left;
+}
+
+.home-text-upper-left .paragraph-title {
+
+    font-family: 'Gallient', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72.9px;
+    line-height: 105.4px;
+}
+
+.home-text-upper-left .paragraph-text {
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14.5px;
+    line-height: 20.6px;
+    text-align: justify;
+    margin-bottom: 54px;
+}
+
+.home-text-upper-left img {
+    padding: 6% 4%;
+    background: linear-gradient(87.78deg, #FF3030 -16.8%, #C662AA 246.49%, #27B1FF 334.26%);
+    border-radius: 47px;
+}
+
+
+.home-text-upper-left a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21.7px;
+    line-height: 31.6px;
+
+    background: url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="100" y1="0" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="%239c20aa" offset="0"/><stop stop-color="%23fb3570" offset="1"/></linearGradient></defs><rect x="5" y="5" width="100%" height="100%" style="height:calc(100% - 10px);width:calc(100% - 10px)" rx="20" ry="20" stroke-width="10" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+    color: #313149;
+    padding: 25px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-left: 2%;
+    /*    border-width: 3px;
+        border-style: solid;
+        border-radius: 47px !important;
+        border-spacing: 4px;
+        border-image-slice: 1;
+        border-image-source: var(--clr-gradient);*/
+
+}
+
+.home-text-upper-right {
+    padding: 8.5% 11.5% 0 0 !important;
+    width: 50% !important;
+    /*
+    background: red;
+    */
+    float: right;
+    display: flow;
+    font-family: 'Gallient', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 67.284px;
+    line-height: 96.3px;
+    text-align: center;
+    vertical-align: center !important;
+    horiz-align: center;
+}
+
+.home-text-upper-right img {
+    float: right;
+}
+
+.home-text-upper-right p {
+    width: 164.32px;
+    height: 150.4px;
+    float: right;
+    padding: 26px 0;
+    margin: 0 0 0 5%;
+}
+
+.home-text-lower {
+    width: 100% !important;
+    display: inline-block;
+
+    padding-right: 11.5%;
+}
+
+.home-text-lower-right a {
+    font-family: 'Poppins', sans-serif !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 17.6631px !important;
+    line-height: 26px !important;
+
+    margin-right: 8.6% !important;
+    margin-top: 7% !important;
+}
+
+.home-text-lower-right .paragraph-title {
+    font-family: 'Gallient', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 62.5309px;
+    line-height: 89px;
+}
+
+.home-text-lower-right {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.home-text-lower-right > .paragraph {
+    order: 1;
+}
+
+.home-text-lower-right > a {
+    order: 2;
+}
+
+.home-text-lower-right p {
+    width: 201.49px;
+    height: 150.54px;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10.0358px;
+    line-height: 18px;
+    text-align: justify;
+}
