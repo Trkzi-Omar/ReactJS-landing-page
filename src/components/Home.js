@@ -1,8 +1,4 @@
 import React from "react";
-import imgArrowDown from "../assets/img/arrow-1@2x.svg";
-import imgArrowRectangle from "../assets/img/Rectangle-Arrow.svg";
-import imgLearnMoreRectangle from "../assets/img/Rectangle-upper-left-gradient-learn-more.svg";
-import imgInnovationCircle from "../assets/img/vector@2x.svg";
 
 const Home = () => {
     return (
@@ -16,18 +12,17 @@ const Home = () => {
                         sites
                         Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous
                         conduira vers de nombreux</p>
-                    <div id={'arrow'}>
-                        <img src={imgArrowDown} id={'imgArrowDown'} alt={''}/>
-                        <img src={imgArrowRectangle} id={'imgArrowRectangle'} alt={''}/>
-                    </div>
-                    <div id={'learn-more'}>
-                        <a>Learn more</a>
-                        <img src={imgLearnMoreRectangle} id={'imgLearnMoreRectangle'} alt={''}/>
+                    <div className={'buttons'}>
+                        <div id={'arrow-box'}>
+                            <div id={'arrow'}/>
+                        </div>
+                        <div id={'learn-more'}>
+                            <a>Learn more</a>
+                        </div>
                     </div>
                 </div>
                 <div className={'home-text-upper-right'}>
-                    <p className={'paragraph-title'}>1/2</p>
-                    <img src={imgInnovationCircle} alt={''}/>
+                    {/*<p className={'paragraph-title'}>1/2</p>*/}
                 </div>
             </div>
             <div className={'home-text-lower'}>

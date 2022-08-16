@@ -68,6 +68,8 @@ a {
     background-image: url("./assets/img/rectangle-3@1x.svg"),
     url("assets/img/Rectangle-1-eye-cover.svg"),
     url("./assets/img/aldo-sadewo-c8byy2s4s-c-unsplash-copie-1@1x.png"),
+    url("./assets/img/vector@2x.svg"),
+    url("./assets/img/number.svg"),
     url("assets/img/Rectangle-2-top-right.svg"),
     url("./assets/img/vector-1@1x.svg"),
     url("./assets/img/vector-2@1x.svg"),
@@ -78,10 +80,14 @@ a {
     no-repeat,
     no-repeat,
     no-repeat,
+    no-repeat,
+    no-repeat,
     no-repeat;
     background-position: center bottom -8px,
     center bottom 555px,
     center bottom,
+    right 23% bottom 565px,
+    right 10% bottom 615px,
     right bottom 595px,
     right bottom 330px,
     right bottom -311px,
@@ -218,20 +224,51 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     margin-bottom: 54px;
 }
 
-#arrow #imgArrowDown {
-    z-index: 2;
+.home-text-upper-left .buttons {
+    display: inline-block;
 }
 
-#arrow * {
+#arrow-box {
+    display: flex;
     position: relative;
     vertical-align: center;
+    align-items: center;
+    width: 75px;
+    height: 122px;
+    background: url("./assets/img/Rectangle-Arrow.svg") no-repeat;
+    transition: 0.3s ease-in-out;
+    float: left;
+    margin-right: 12px;
 }
 
 #arrow {
-    position: relative;
-    overflow: revert;
+    height: 43px;
+    width: 100%;
+    z-index: 2;
+    background: CENTER url("./assets/img/arrow-1@2x.svg") no-repeat;
+    transition: all .3s ease-in-out;
 }
 
+#arrow-box:hover #arrow {
+    margin-top: 18%;
+}
+
+#learn-more a {
+    width: 100%;
+    text-align: center;
+
+    vertical-align: middle;
+}
+
+#learn-more {
+    display: flex;
+    width: 240px;
+    height: 122px;
+    position: relative;
+    vertical-align: middle;
+    align-items: center;
+    background: url('./assets/img/Rectangle-upper-left-gradient-learn-more.svg') center center no-repeat;
+}
 
 .home-text-upper-left a {
     font-family: 'Poppins', sans-serif;
@@ -239,20 +276,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     font-weight: 500;
     font-size: 21.7px;
     line-height: 31.6px;
-
-    background: url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="100" y1="0" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="%239c20aa" offset="0"/><stop stop-color="%23fb3570" offset="1"/></linearGradient></defs><rect x="5" y="5" width="100%" height="100%" style="height:calc(100% - 10px);width:calc(100% - 10px)" rx="20" ry="20" stroke-width="10" fill="transparent" stroke="url(%23Gradient)"/></svg>');
-    color: #313149;
-    padding: 25px;
-    border-radius: 15px;
-    display: inline-block;
-    margin-left: 2%;
-    /*    border-width: 3px;
-        border-style: solid;
-        border-radius: 47px !important;
-        border-spacing: 4px;
-        border-image-slice: 1;
-        border-image-source: var(--clr-gradient);*/
-
 }
 
 .home-text-upper-right {
