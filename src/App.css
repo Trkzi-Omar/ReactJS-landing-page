@@ -41,7 +41,7 @@ html, body, #app, #app > div {
     height: 100%;
 }
 
-a {
+a, a:hover {
     text-decoration: none;
     text-underline: none !important;
     color: inherit;
@@ -242,6 +242,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 #arrow {
+    cursor: pointer;
     height: 43px;
     width: 100%;
     z-index: 2;
@@ -253,14 +254,18 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     margin-top: 18%;
 }
 
+#learn-more:hover a {
+    font-weight: var(--fw-bold);
+}
+
 #learn-more a {
     width: 100%;
     text-align: center;
-
     vertical-align: middle;
 }
 
 #learn-more {
+    cursor: pointer;
     display: flex;
     width: 240px;
     height: 122px;
