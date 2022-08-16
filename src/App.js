@@ -1,8 +1,7 @@
 import './App.css';
 import Home from './components/Home';
 import {NavBar} from './components/NavBar';
-import {BackGround} from './components/BackGround';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import imgHorizontalLine from "./assets/img/line-1@1x.svg";
 
 function App() {
