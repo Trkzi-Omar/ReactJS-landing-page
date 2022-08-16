@@ -26,10 +26,9 @@ export const NavBar = () => {
     }
 
     return (
-        <Navbar className={scrolled ? "scrolled" : ""}>
-            <Container id={'navBar'}>
-                <Navbar.Brand href="/">
-                    <span id={'logo-text'}>S</span>
+        <Navbar  id={'navBar'} className={scrolled ? "scrolled" : ""}>
+                <Navbar.Brand id={'logo-text'} href="/">
+                    S
                 </Navbar.Brand>
                 <Navbar.Collapse id="navbar-elements">
                     <Nav className="nav-list">
@@ -53,7 +52,6 @@ export const NavBar = () => {
                           </a>
                     </span>
                 </Navbar.Collapse>
-            </Container>
         </Navbar>
     )
 }

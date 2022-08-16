@@ -4,8 +4,6 @@ import imgLeftEclipse from "../assets/img/ellipse-1@1x.svg";
 export const BackGround = () => {
     return (
         <div className={'bg'} id={'background'}>
-            <img className={'bg-img'} id={'img-center-person'} src={imgCenterPerson} alt={''}/>
-            <img className={'bg-img'} id={'img-left-eclipse'} src={imgLeftEclipse} alt={''}/>
         </div>
     )
 }

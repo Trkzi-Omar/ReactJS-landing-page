@@ -25,68 +25,83 @@
     --fw-black: 900;
 }
 
-html {
-    min-height: 100%;
-    position: relative;
-}
-
-html, body, #app, #app > div {
-    height: 100%;
-}
-
-#App {
-    display: block;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.125rem;
-    line-height: 1.25;
-    color: var(--clr-white);
-    background-color: var(--clr-dark);
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/** BackGround **/
-#background {
-    position: relative;
+html, #root, #App {
+    position: absolute;
     margin: 0 !important;
     padding: 0 !important;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    overflow-x: hidden !important;
+    overflow-y: auto;
 }
 
-.bg-img {
-    margin: 0;
-    padding: 0;
-    overflow: hidden !important;
-    white-space: nowrap;
+html, body, #app, #app > div {
+    height: 100%;
 }
 
-#img-center-person {
-    z-index: 1;
-    width: 42.7%;
+a {
+    text-decoration: none;
+    text-underline: none !important;
+    color: inherit;
+}
+
+#root {
+    display: flex;
+}
+
+#App {
+    display: block;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.25;
+    color: var(--clr-white);
+    background-color: var(--clr-dark);
+    background-image: url("./assets/img/ellipse-2@1x.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+#home {
+    background-image: url("./assets/img/rectangle-3@1x.svg"),
+    url("assets/img/Rectangle-1-eye-cover.svg"),
+    url("./assets/img/aldo-sadewo-c8byy2s4s-c-unsplash-copie-1@1x.png"),
+    url("assets/img/Rectangle-2-top-right.svg"),
+    url("./assets/img/vector-1@1x.svg"),
+    url("./assets/img/vector-2@1x.svg"),
+    url("./assets/img/ellipse-1@1x.svg");
+    background-repeat: no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+    background-position: center bottom -8px,
+    center bottom 555px,
+    center bottom,
+    right bottom 595px,
+    right bottom 330px,
+    right bottom -311px,
+    bottom left;
+}
+
+/** BackGround **/
+#background {
+    pointer-events: none !important;
     position: absolute;
-    left: calc(50% - 42.7% / 2);
-    bottom: 0;
-}
-
-#img-left-eclipse {
-    position: absolute;
-    width: 1179px;
-    height: 1179px;
-    left: -16%;
-    top: 3%;
-    overflow: hidden !important;
-    z-index: 0;
-
-    /* Gradient */
-    background: linear-gradient(100.25deg, #FF3030 16.12%, #7682B3 65.23%, #C662AA 163.44%, #27B1FF 212.54%);
-    opacity: 0.47;
-    filter: blur(444px);
+    margin: 0 !important;
+    padding: 0 !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block !important;
+    z-index: 999;
+    background-image: url("./assets/img/Rectangle-Fullscreen-Noise-1.svg"), url("./assets/img/Rectangle-Fullscreen-Noise-1.svg");
+    background-repeat: repeat, repeat;
 }
 
 /**   Navbar   **/
@@ -101,10 +116,11 @@ nav {
     font-size: 44px;
     line-height: 58.4px;
     color: #FFFFFF;
+    padding-left: 10%;
 }
 
 .nav-list {
-    margin-left: 20%;
+    margin-left: 17%;
     display: flex;
     font-size: 0.875rem;
     letter-spacing: 1px;
@@ -171,6 +187,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .home-text-upper {
     width: 100% !important;
     display: inline-block;
+    margin-bottom: 5%;
 }
 
 .home-text-upper-left {
@@ -201,15 +218,23 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     margin-bottom: 54px;
 }
 
-.home-text-upper-left img {
-    padding: 6% 4%;
-    background: linear-gradient(87.78deg, #FF3030 -16.8%, #C662AA 246.49%, #27B1FF 334.26%);
-    border-radius: 47px;
+#arrow #imgArrowDown {
+    z-index: 2;
+}
+
+#arrow * {
+    position: relative;
+    vertical-align: center;
+}
+
+#arrow {
+    position: relative;
+    overflow: revert;
 }
 
 
 .home-text-upper-left a {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 21.7px;
@@ -231,7 +256,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .home-text-upper-right {
-    padding: 8.5% 11.5% 0 0 !important;
+    padding: 8.5% 6.3% 0 0 !important;
     width: 50% !important;
     /*
     background: red;
@@ -264,7 +289,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     width: 100% !important;
     display: inline-block;
 
-    padding-right: 11.5%;
+    padding-right: 9.5%;
 }
 
 .home-text-lower-right a {

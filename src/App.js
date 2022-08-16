@@ -11,7 +11,6 @@ function App() {
             <NavBar/>
             <img id={'imgHorizontalLine'} src={imgHorizontalLine} alt=""/>
             <Home/>
-            <BackGround/>
         </div>
     );
 }
