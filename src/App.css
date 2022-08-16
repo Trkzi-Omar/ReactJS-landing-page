@@ -320,15 +320,36 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     padding-right: 9.5%;
 }
 
-.home-text-lower-right a {
+#watch:hover a {
+    font-weight: var(--fw-bold);
+    font-size: 110%;
+}
+
+#watch a {
     font-family: 'Poppins', sans-serif !important;
     font-style: normal !important;
     font-weight: 700 !important;
     font-size: 17.6631px !important;
     line-height: 26px !important;
 
-    margin-right: 8.6% !important;
-    margin-top: 7% !important;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#watch {
+    float: left;
+    cursor: pointer;
+    display: flex;
+    width: 237px;
+    height: 308px;
+    margin-right: 45px;
+    position: relative;
+    vertical-align: middle;
+    align-items: center;
+    background-image: url('./assets/img/Rectangle-outer.svg'), url('./assets/img/Rectangle-middle.svg'), url('./assets/img/Rectangle-inner.svg');
+    background-position: center center, center center, center center;
+    background-repeat: no-repeat;
 }
 
 .home-text-lower-right .paragraph-title {
@@ -342,14 +363,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 .home-text-lower-right {
     display: flex;
     flex-direction: row-reverse;
-}
-
-.home-text-lower-right > .paragraph {
-    order: 1;
-}
-
-.home-text-lower-right > a {
-    order: 2;
 }
 
 .home-text-lower-right p {

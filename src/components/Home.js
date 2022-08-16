@@ -27,7 +27,6 @@ const Home = () => {
             </div>
             <div className={'home-text-lower'}>
                 <div className={'home-text-lower-right'}>
-                    <a>Watch</a>
                     <div className={'paragraph'}>
                         <span className={'paragraph-title'}>Advo</span>
                         <p className={'paragraph-text'}>Est qu'il possède une distribution de lettres plus ou moins
@@ -40,6 +39,7 @@ const Home = () => {
                             vous
                             conduira vers de nombreux</p>
                     </div>
+                    <div id={'watch'}><a>Watch</a></div>
                 </div>
             </div>
         </div>
