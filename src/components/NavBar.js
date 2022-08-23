@@ -30,7 +30,7 @@ export const NavBar = () => {
                 <Navbar.Brand id={'logo-text'} href="/">
                     S
                 </Navbar.Brand>
-                <Navbar.Collapse id="navbar-elements">
+                <Navbar.Collapse className="navbar-elements">
                     <Nav className="nav-list">
                         <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
                                   onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>

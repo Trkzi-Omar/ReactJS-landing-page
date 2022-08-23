@@ -113,8 +113,12 @@ a, a:hover {
 /**   Navbar   **/
 nav {
     background: transparent;
-    width: 100% !important;
+    justify-content: center !important;
     padding-bottom: 0 !important;
+}
+
+.nav-list {
+    justify-content: center !important;
 }
 
 #logo-text {
@@ -126,7 +130,7 @@ nav {
 }
 
 .nav-list {
-    margin-left: 17%;
+
     display: flex;
     font-size: 0.875rem;
     letter-spacing: 1px;
@@ -134,11 +138,15 @@ nav {
     justify-content: space-between;
 }
 
+.navbar-elements {
+    justify-content: center;
+}
+
 nav.navbar .navbar-nav .nav-link.navbar-link {
     font-weight: var(--fw-normal);
     color: #fff !important;
     letter-spacing: 0.8px;
-    padding: 0 25px;
+    padding: 0 1.25em;
     font-size: 19.9px;
     opacity: 0.75;
 }
@@ -166,12 +174,18 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     color: var(--clr-white);
 }
 
+.navbar-text {
+    padding-right: 1rem;
+}
+
 .navbar-text img {
     padding-left: 0.4rem;
+    padding-right: 1rem;
 }
 
 .navbar-text:hover img {
     padding-left: 1rem;
+    padding-right: 0.4rem;
     transition: ease-in-out;
     transition-duration: 500ms;
 }
@@ -179,6 +193,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 /** Horizontal line **/
 #imgHorizontalLine {
     width: 100%;
+    float: left;
 }
 
 /** Home **/
